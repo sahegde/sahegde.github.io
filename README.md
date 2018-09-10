@@ -1,4 +1,4 @@
-Kumaraswamy Layout - Neighbourhood Map
+# Kumaraswamy Layout - Neighbourhood Map
 
 This site contains some real time locations present in kumaraswamy layout.
 
@@ -15,4 +15,4 @@ Typing a filter will filter out only the queries that match the filter text.
 
 Locations are provided on the left hand side and the correspinding map is displayed on the right hand side.
 
-it is responsive and can be viewed on screens of varying sizes.
+The site is responsive and can be viewed on screens of varying sizes and you can find a working version here - https://github.com/sahegde/sahegde.github.io
