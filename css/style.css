@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.search-div {
+	flex-grow: 1;
+	height: 20px;
+	font-size: 1em;
+	padding: 5px 20px;
+	margin: 4px;
+}
+
+.filterText {
+	margin: 5px;
+	background-color: #3CB371;
+	width: 10%;
+	height: 10%;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.search {
+	width: 30%;
+	display: flex;
+}
+
+.map {
+	order: 2;
+	flex-grow: 4;
+	background-color: #fff;
+	text-align: center;
+	height: 90vh;
+	width: 95vh;
+}
+
+.placelistul {
+	margin: 0;
+	padding: 0;
+}
+
+.place {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #3CB371;
+}
+
+
+.placelist {
+	order: 1;
+	flex-grow: 1;
+}
+
+
+@media only screen and (max-device-width : 900px), only screen and (max-width : 900px)  {
+	.app {
+		flex-direction: column;
+	}
+	.search-div, .list {
+		font-size: 1.5em;
+	}
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kumaraswamy layout, Neighborhood Map</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- Below code loads the needed scripts and binds in to this html -->
+	<script src='js/knockout-3.4.0.js'></script>
+	<script src='js/jquery-1.12.0.min.js'></script>
+	<script src='js/application.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX29OWpcdLRiAG_pmKzWF4NioyYXmiDsk&callback=startApp" onerror="errorHandling()"></script>
+
+	<!-- below code gives a filter where the user can input the search items -->
+	<p class="filterText">Filter location:</p>
+	<div class="search" id="search">
+		<input class="search-div" id="search-div" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+	</div>
+
+	<!-- below code gives a filter list of places on the left hand side and the map div on the right side -->
+	<div class="app" id="app">
+		<div class="placelist" id="placelist">
+			<ul class="placelistul" id="placelistul" data-bind="foreach: filteredList">
+				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
+			</ul>
+		</div>
+		<div class="map" id="map">There is an error loading Google Maps. Please Try Again.</div>
+	</div>
+</body>
+</html>
