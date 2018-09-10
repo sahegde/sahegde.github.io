@@ -16,3 +16,5 @@ Typing a filter will filter out only the queries that match the filter text.
 Locations are provided on the left hand side and the correspinding map is displayed on the right hand side.
 
 The site is responsive and can be viewed on screens of varying sizes and you can find a working version here - https://github.com/sahegde/sahegde.github.io
+
+Credits - https://github.com/udacity/ud864
