@@ -7,16 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<!-- Below code loads the needed scripts and binds in to this html -->
-	<script src='js/knockout-3.4.0.js'></script>
-	<script src='js/jquery-1.12.0.min.js'></script>
-	<script src='js/application.js'></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX29OWpcdLRiAG_pmKzWF4NioyYXmiDsk&callback=startApp" onerror="errorHandling()"></script>
-
 	<!-- below code gives a filter where the user can input the search items -->
 	<p class="filterText">Filter location:</p>
 	<div class="search" id="search">
-		<input class="search-div" id="search-div" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+		<input class="search-div" id="search-div" data-bind="textInput: searchTerm" />
 	</div>
 
 	<!-- below code gives a filter list of places on the left hand side and the map div on the right side -->
@@ -26,7 +20,13 @@
 				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
 			</ul>
 		</div>
-		<div class="map" id="map">There is an error loading Google Maps. Please Try Again.</div>
+		<div class="map" id="map"></div>
 	</div>
+
+	<!-- Below code loads the needed scripts and binds in to this html -->
+	<script src='js/knockout-3.4.0.js'></script>
+	<script src='js/jquery-1.12.0.min.js'></script>
+	<script src='js/application.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX29OWpcdLRiAG_pmKzWF4NioyYXmiDsk&callback=startApp" onerror="handleError()"></script>
 </body>
 </html>

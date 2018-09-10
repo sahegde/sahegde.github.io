@@ -71,7 +71,13 @@ var Location = function(data) {
 			self.URL = "";
 		}
 		self.street = results.location.formattedAddress[0];
+		if (typeof self.street === 'undefined'){
+			self.street = "";
+		}
      	self.city = results.location.formattedAddress[1];
+     	if (typeof self.city === 'undefined'){
+			self.city = "";
+		}
 	}).fail(function() {
 		alert("Foursquare api call error. Please refresh the page and try again later.");
 	});
