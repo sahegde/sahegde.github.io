@@ -26,8 +26,10 @@ What are the APIs used in this project
     - The above api takes in latitude, longitude, client_id, client_secret, name and version atttributes and gives details about the location
 
 
-How to run the application 
+# How to run the application ?
 
 - Paste this url in the browser url - https://sahegde.github.io/
 
-You can find a working version here - https://github.com/sahegde/sahegde.github.io
+- You can find the code here - https://github.com/sahegde/sahegde.github.io
+
+Credits - https://github.com/udacity/ud864
