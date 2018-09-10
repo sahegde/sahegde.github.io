@@ -1,7 +1,4 @@
-# sahegde.github.io
-Udacity neighbourhood project
-
-Kumaraswamy Layout - Neighbourhood Map
+# Kumaraswamy Layout - Neighbourhood Map
 
 This site contains some real time locations present in kumaraswamy layout.
 
